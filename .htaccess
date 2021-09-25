@@ -1,0 +1,17 @@
+# rewrite code starts here
+
+RewriteEngine on
+
+# does not apply to existing directories - if it exists on server, don't change anything
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Check for file in directory with .html extension
+
+RewriteCond %{REQUEST_FILENAME}\.html -f
+
+# show page with .html extension
+
+RewriteRule ^(.*)$ $1.html [NC,L]  # grab everything in url, add .html at end 
+                                    # NC = non-case (sensitive)
+                                    # L = rules only apply to this action
