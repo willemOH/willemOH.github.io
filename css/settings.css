@@ -1,3 +1,10 @@
+:root {
+  --theme-black-rgb: 90, 48, 24;
+  --theme-black: rgb(var(--theme-black-rgb));
+
+  --theme-white-rgb: 245, 240, 232;
+  --theme-white: rgb(var(--theme-white-rgb));
+}
 
 @font-face {
   font-family: "signika";
@@ -18,7 +25,7 @@
 }
 
 body{
-    background-color: black;
+    background-color: var(--theme-black);
     /*background-image: linear-gradient(to bottom, rgb(33, 33, 33) 10%, black 90%);*/
 }
 
@@ -89,7 +96,7 @@ iframe {
 a{
     display: inline-block;
     text-decoration: none; 
-    color: white;
+    color: var(--theme-white);
     font-family: "signika";
 
 }
@@ -98,7 +105,7 @@ a{
 
 
 p{
-    color:white;
+    color: var(--theme-white);
 }
 h1{
     
@@ -145,7 +152,7 @@ span {
     height:50px;
     z-index:100;
     text-align: center;
-    color: white;
+    color: var(--theme-white);
     font-weight: normal;
     
     
@@ -168,7 +175,7 @@ span {
     text-align: center;
     font-weight: normal;
     text-align: center;
-    color: white;
+    color: var(--theme-white);
     word-spacing:100;
     
     
@@ -210,7 +217,7 @@ span {
     right:0px;
     bottom:20px;
     overflow-y:scroll; 
-    background-color: black;
+    background-color: var(--theme-black);
     
     
     
@@ -289,7 +296,7 @@ span {
     height: 80px;
     
     
-    background-image: linear-gradient(to top, transparent, black);
+    background-image: linear-gradient(to top, transparent, var(--theme-black));
     opacity: 1; 
 }
 /*
@@ -318,7 +325,7 @@ hsla(0, 0%, 0%, 0) 100%,
     z-index:40;
    
     
-    background-image: linear-gradient(to bottom, transparent, black);
+    background-image: linear-gradient(to bottom, transparent, var(--theme-black));
     opacity: 1; 
 }
 .caption{
@@ -353,7 +360,7 @@ hsla(0, 0%, 0%, 0) 100%,
     margin-bottom: 20;
     text-align: center;
     font-size: 19;
-    color: white;
+    color: var(--theme-white);
    
     
     
@@ -373,7 +380,7 @@ hsla(0, 0%, 0%, 0) 100%,
     margin-bottom: 420;
     text-align: center;
     font-size: 19;
-    color: white;
+    color: var(--theme-white);
    
     
     
@@ -452,6 +459,8 @@ li{
 }
 ul{
     margin-top: 120;
+    color: var(--theme-black);
+    list-style-color: var(--theme-black);
 }
 
 ul.threeSpace{ /* pages with 3d elements change spacing, this is to correct it */
